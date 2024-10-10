@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Load the data
-main_data_df = pd.read_csv("https://github.com/rizkijundika/Proyek-Analisis-Data/blob/a060ca8cf8aa7098bc7b57f8efdf3451848d664c/dashboard/main_data.csv")
+main_data_df = pd.read_csv("main_data.csv")
 main_data_df['order_purchase_timestamp'] = pd.to_datetime(main_data_df['order_purchase_timestamp'])
 
 # Sidebar for navigation
